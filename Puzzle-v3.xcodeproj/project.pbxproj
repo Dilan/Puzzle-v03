@@ -24,6 +24,7 @@
 		151FE04314DC4FB000E91682 /* Fragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE04214DC4FB000E91682 /* Fragment.m */; };
 		151FE04714DC53DD00E91682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FE04614DC53DD00E91682 /* QuartzCore.framework */; };
 		151FE05014DC551E00E91682 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FE04F14DC551E00E91682 /* CoreData.framework */; };
+		1536FC9B14DDB6480044C8FD /* ImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1536FC9A14DDB6480044C8FD /* ImageGallery.m */; };
 		15EFFF9A14DC5EB0005D8999 /* tspark.png in Resources */ = {isa = PBXBuildFile; fileRef = 15EFFF9914DC5EB0005D8999 /* tspark.png */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		151FE04214DC4FB000E91682 /* Fragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fragment.m; sourceTree = "<group>"; };
 		151FE04614DC53DD00E91682 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		151FE04F14DC551E00E91682 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1536FC9914DDB6480044C8FD /* ImageGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGallery.h; sourceTree = "<group>"; };
+		1536FC9A14DDB6480044C8FD /* ImageGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGallery.m; sourceTree = "<group>"; };
 		15EFFF9914DC5EB0005D8999 /* tspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tspark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +117,8 @@
 				151FE02C14DC3C7400E91682 /* GalleryViewController.h */,
 				151FE02D14DC3C7400E91682 /* GalleryViewController.m */,
 				151FE02E14DC3C7400E91682 /* GalleryViewController.xib */,
+				1536FC9914DDB6480044C8FD /* ImageGallery.h */,
+				1536FC9A14DDB6480044C8FD /* ImageGallery.m */,
 				151FE04114DC4FB000E91682 /* Fragment.h */,
 				151FE04214DC4FB000E91682 /* Fragment.m */,
 				151FE03814DC4EC500E91682 /* Grid.h */,
@@ -213,6 +218,7 @@
 				151FE03F14DC4EC600E91682 /* Puzzle.m in Sources */,
 				151FE04014DC4EC600E91682 /* Tile.m in Sources */,
 				151FE04314DC4FB000E91682 /* Fragment.m in Sources */,
+				1536FC9B14DDB6480044C8FD /* ImageGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

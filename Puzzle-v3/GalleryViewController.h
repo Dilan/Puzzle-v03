@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/CoreAnimation.h>
 #import "ViewController.h"
+#import "ImageGallery.h"
 
 @interface GalleryViewController : UIViewController
 
+
+@property (nonatomic,retain) NSMutableArray *images;
 @property(copy) NSString *currentImagePath;
 @property (retain, nonatomic) UIImage *puzzleScreenshot;
 @property (retain, nonatomic) ViewController *onImageSelectHandler;

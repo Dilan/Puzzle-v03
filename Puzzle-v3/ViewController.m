@@ -44,6 +44,28 @@
     [self showPuzzle];
     // 3rd
     [self startTimer];
+    
+    if(self.galleryViewController == nil) {
+        GalleryViewController *galleryViewController = [[GalleryViewController alloc] initWithNibName:@"GalleryViewController" bundle:nil];
+        self.galleryViewController = galleryViewController;
+        [galleryViewController release];
+        
+        
+        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"image"];
+        
+        self.galleryViewController.images = [[NSMutableArray alloc] init];
+        
+        for (NSInteger i=1; i<=4; i++) {
+            NSMutableString* fileName = [NSMutableString stringWithFormat:@"image-00%d.png", i];
+            NSMutableString* thumbFileName = [NSMutableString stringWithFormat:@"s_image-00%d.png", i];
+            
+            ImageGallery *image = [[ImageGallery alloc] init]; 
+            image.path = [path stringByAppendingPathComponent:fileName];
+            image.image = [[[UIImage alloc] initWithContentsOfFile:[path stringByAppendingPathComponent:thumbFileName]] autorelease];
+            
+            [self.galleryViewController.images addObject:image];
+        }        
+    }
 }
 
 - (void)viewDidUnload
@@ -171,13 +193,6 @@
 }
 
 - (IBAction)showGallery:(id)sender {
-    
-    if(self.galleryViewController == nil) {
-        GalleryViewController *galleryViewController = [[GalleryViewController alloc] initWithNibName:@"GalleryViewController" bundle:nil];
-        self.galleryViewController = galleryViewController;
-        [galleryViewController release];
-    }
-    
     
     self.galleryViewController.currentImagePath = self.imagePath;
     self.galleryViewController.puzzleScreenshot = [self subImageFrom:[self screenshot] WithRect:CGRectMake(20, 60, 285, 405)];

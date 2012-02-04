@@ -10,6 +10,7 @@
 
 @implementation GalleryViewController
 
+@synthesize images = _images;
 @synthesize currentImagePath = _currentImagePath;
 @synthesize puzzleScreenshot = _puzzleScreenshot;
 @synthesize onImageSelectHandler = _onImageSelectHandler;
@@ -80,16 +81,17 @@
 }
 
 -(void)showImages {
-    NSMutableArray *files = [self readImageDirectory];
-    
     NSInteger counter = 0;
     for (UIImageView *imageView in [[self view] subviews]) {
-        NSString *filePath = [files objectAtIndex:counter]; 
+        ImageGallery *image = [self.images objectAtIndex:counter]; 
+        
+        NSString *filePath = image.path;
+        
         if(nil != filePath) {
             if([filePath isEqualToString:self.currentImagePath]) {
                 imageView.image = self.puzzleScreenshot;
             } else {
-                imageView.image = [[[UIImage alloc] initWithContentsOfFile:filePath] autorelease];
+                imageView.image = image.image;
             }
             imageView.layer.borderWidth = 1;
         }

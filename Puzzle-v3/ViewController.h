@@ -10,6 +10,7 @@
 #import <QuartzCore/CoreAnimation.h>
 #import "Puzzle.h"
 #import "Tile.h"
+#import "ImageGallery.h"
 
 @class GalleryViewController;
 
