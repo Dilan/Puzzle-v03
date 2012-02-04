@@ -15,6 +15,16 @@
 		151FE02014DC359E00E91682 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE01F14DC359E00E91682 /* AppDelegate.m */; };
 		151FE02314DC359E00E91682 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE02214DC359E00E91682 /* ViewController.m */; };
 		151FE02614DC359E00E91682 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151FE02414DC359E00E91682 /* ViewController.xib */; };
+		151FE02F14DC3C7500E91682 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE02D14DC3C7400E91682 /* GalleryViewController.m */; };
+		151FE03014DC3C7500E91682 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151FE02E14DC3C7400E91682 /* GalleryViewController.xib */; };
+		151FE03214DC3FBA00E91682 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 151FE03114DC3FBA00E91682 /* image */; };
+		151FE03E14DC4EC600E91682 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE03914DC4EC500E91682 /* Grid.m */; };
+		151FE03F14DC4EC600E91682 /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE03B14DC4EC500E91682 /* Puzzle.m */; };
+		151FE04014DC4EC600E91682 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE03D14DC4EC500E91682 /* Tile.m */; };
+		151FE04314DC4FB000E91682 /* Fragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE04214DC4FB000E91682 /* Fragment.m */; };
+		151FE04714DC53DD00E91682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FE04614DC53DD00E91682 /* QuartzCore.framework */; };
+		151FE05014DC551E00E91682 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FE04F14DC551E00E91682 /* CoreData.framework */; };
+		15EFFF9A14DC5EB0005D8999 /* tspark.png in Resources */ = {isa = PBXBuildFile; fileRef = 15EFFF9914DC5EB0005D8999 /* tspark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,21 @@
 		151FE02114DC359E00E91682 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		151FE02214DC359E00E91682 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		151FE02514DC359E00E91682 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		151FE02C14DC3C7400E91682 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		151FE02D14DC3C7400E91682 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		151FE02E14DC3C7400E91682 /* GalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		151FE03114DC3FBA00E91682 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		151FE03814DC4EC500E91682 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		151FE03914DC4EC500E91682 /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
+		151FE03A14DC4EC500E91682 /* Puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
+		151FE03B14DC4EC500E91682 /* Puzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Puzzle.m; sourceTree = "<group>"; };
+		151FE03C14DC4EC500E91682 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		151FE03D14DC4EC500E91682 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		151FE04114DC4FB000E91682 /* Fragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragment.h; sourceTree = "<group>"; };
+		151FE04214DC4FB000E91682 /* Fragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fragment.m; sourceTree = "<group>"; };
+		151FE04614DC53DD00E91682 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		151FE04F14DC551E00E91682 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		15EFFF9914DC5EB0005D8999 /* tspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tspark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151FE05014DC551E00E91682 /* CoreData.framework in Frameworks */,
+				151FE04714DC53DD00E91682 /* QuartzCore.framework in Frameworks */,
 				151FE01014DC359C00E91682 /* UIKit.framework in Frameworks */,
 				151FE01214DC359C00E91682 /* Foundation.framework in Frameworks */,
 				151FE01414DC359C00E91682 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +94,8 @@
 		151FE00E14DC359C00E91682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				151FE04F14DC551E00E91682 /* CoreData.framework */,
+				151FE04614DC53DD00E91682 /* QuartzCore.framework */,
 				151FE00F14DC359C00E91682 /* UIKit.framework */,
 				151FE01114DC359C00E91682 /* Foundation.framework */,
 				151FE01314DC359C00E91682 /* CoreGraphics.framework */,
@@ -82,6 +111,18 @@
 				151FE02114DC359E00E91682 /* ViewController.h */,
 				151FE02214DC359E00E91682 /* ViewController.m */,
 				151FE02414DC359E00E91682 /* ViewController.xib */,
+				151FE02C14DC3C7400E91682 /* GalleryViewController.h */,
+				151FE02D14DC3C7400E91682 /* GalleryViewController.m */,
+				151FE02E14DC3C7400E91682 /* GalleryViewController.xib */,
+				151FE04114DC4FB000E91682 /* Fragment.h */,
+				151FE04214DC4FB000E91682 /* Fragment.m */,
+				151FE03814DC4EC500E91682 /* Grid.h */,
+				151FE03914DC4EC500E91682 /* Grid.m */,
+				151FE03A14DC4EC500E91682 /* Puzzle.h */,
+				151FE03B14DC4EC500E91682 /* Puzzle.m */,
+				151FE03C14DC4EC500E91682 /* Tile.h */,
+				151FE03D14DC4EC500E91682 /* Tile.m */,
+				151FE03114DC3FBA00E91682 /* image */,
 				151FE01614DC359C00E91682 /* Supporting Files */,
 			);
 			path = "Puzzle-v3";
@@ -90,6 +131,7 @@
 		151FE01614DC359C00E91682 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15EFFF9914DC5EB0005D8999 /* tspark.png */,
 				151FE01714DC359C00E91682 /* Puzzle-v3-Info.plist */,
 				151FE01814DC359D00E91682 /* InfoPlist.strings */,
 				151FE01B14DC359D00E91682 /* main.m */,
@@ -150,6 +192,9 @@
 			files = (
 				151FE01A14DC359D00E91682 /* InfoPlist.strings in Resources */,
 				151FE02614DC359E00E91682 /* ViewController.xib in Resources */,
+				151FE03014DC3C7500E91682 /* GalleryViewController.xib in Resources */,
+				151FE03214DC3FBA00E91682 /* image in Resources */,
+				15EFFF9A14DC5EB0005D8999 /* tspark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +208,11 @@
 				151FE01C14DC359D00E91682 /* main.m in Sources */,
 				151FE02014DC359E00E91682 /* AppDelegate.m in Sources */,
 				151FE02314DC359E00E91682 /* ViewController.m in Sources */,
+				151FE02F14DC3C7500E91682 /* GalleryViewController.m in Sources */,
+				151FE03E14DC4EC600E91682 /* Grid.m in Sources */,
+				151FE03F14DC4EC600E91682 /* Puzzle.m in Sources */,
+				151FE04014DC4EC600E91682 /* Tile.m in Sources */,
+				151FE04314DC4FB000E91682 /* Fragment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +322,7 @@
 				151FE02B14DC359E00E91682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

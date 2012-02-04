@@ -26,9 +26,16 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
+    
+    // implementation
+    self.viewController.puzzle = [self restorePuzzleState];
+    self.viewController.imagePath = [self anyImagePath];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -60,6 +67,8 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -69,6 +78,28 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+// -----------------------------------------------------------------------------
+// application
+// -----------------------------------------------------------------------------
+
+-(Puzzle*) restorePuzzleState {
+    return [self createPuzzle];
+}
+
+-(Puzzle*)createPuzzle {
+    // matrix grid
+    Grid *grid = [[Grid alloc] initWithHorizontalLinesAmount:4 AndVerticalLinesAmount:4];
+    return [[[Puzzle alloc] initWithGrid:[grid autorelease]] autorelease];
+}
+
+-(NSString*)anyImagePath {
+    NSString* imageDirectoryPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"image"];
+    
+    NSString *imagePath = [imageDirectoryPath stringByAppendingPathComponent:@"image-003.jpg"];
+    
+    return imagePath;
 }
 
 @end

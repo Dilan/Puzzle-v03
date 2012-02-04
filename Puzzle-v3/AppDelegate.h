@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Puzzle.h"
+#import "Grid.h"
 
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) ViewController *viewController;
+
+-(Puzzle*)restorePuzzleState;
+-(Puzzle*)createPuzzle;
+-(NSString*)anyImagePath;
 
 @end
