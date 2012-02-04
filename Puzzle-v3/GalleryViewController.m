@@ -37,6 +37,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    // [self showImages];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     [self showImages];
 }
 

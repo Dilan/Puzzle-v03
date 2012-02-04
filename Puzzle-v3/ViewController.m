@@ -132,9 +132,6 @@
     
     
     [self.puzzle shuffle];
-    
-    //self.motorEmitter = nil;
-    
     [self.motorEmitter removeFromSuperlayer];
     
     [self sliceImageIntoTiles];
@@ -192,7 +189,7 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     
     [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight 
-                           forView:self.view cache:YES];
+                           forView:self.view cache:NO];
     
     [self.galleryViewController viewWillAppear:YES];
     [self viewWillDisappear:YES];
@@ -212,7 +209,7 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     
     [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft 
-                           forView:self.view cache:YES];
+                           forView:self.view cache:NO];
     
     [self viewWillAppear:YES];
     [self.galleryViewController viewWillDisappear:YES];
