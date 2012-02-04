@@ -97,7 +97,7 @@
 -(NSString*)anyImagePath {
     NSString* imageDirectoryPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"image"];
     
-    NSString *imagePath = [imageDirectoryPath stringByAppendingPathComponent:@"image-003.jpg"];
+    NSString *imagePath = [imageDirectoryPath stringByAppendingPathComponent:@"image-003.png"];
     
     return imagePath;
 }

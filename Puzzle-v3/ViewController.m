@@ -329,6 +329,8 @@
     
     CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(0, 0, 32, 32));
     
+    [image release];
+    
     return imageRef;
 }
 
@@ -427,7 +429,7 @@
 	spark.beginTime = 0.8;
 	spark.scale = 0.4;
 	spark.birthRate = 10;
-	
+    
 	preSpark.emitterCells = [NSArray arrayWithObjects:spark, nil];
 	rocket.emitterCells = [NSArray arrayWithObjects:flare, firework, preSpark, nil];
 	mortor.emitterCells = [NSArray arrayWithObjects:rocket, nil];
